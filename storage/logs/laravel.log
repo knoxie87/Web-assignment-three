@@ -1,0 +1,550 @@
+[2021-06-17 08:04:27] local.INFO: array (
+  0 => 
+  array (
+    'acc' => 'Green',
+    'activity' => 'No volcanic unrest.',
+    'hazards' => 'Volcanic environment hazards.',
+    'level' => 0,
+    'volcanoID' => 'taupo',
+    'volcanoTitle' => 'Taupo',
+  ),
+  1 => 
+  array (
+    'acc' => 'Green',
+    'activity' => 'No volcanic unrest.',
+    'hazards' => 'Volcanic environment hazards.',
+    'level' => 0,
+    'volcanoID' => 'tongariro',
+    'volcanoTitle' => 'Tongariro',
+  ),
+  2 => 
+  array (
+    'acc' => 'Green',
+    'activity' => 'Minor volcanic unrest.',
+    'hazards' => 'Volcanic unrest hazards.',
+    'level' => 1,
+    'volcanoID' => 'whiteisland',
+    'volcanoTitle' => 'White Island',
+  ),
+  3 => 
+  array (
+    'acc' => 'Green',
+    'activity' => 'Minor volcanic unrest.',
+    'hazards' => 'Volcanic unrest hazards.',
+    'level' => 1,
+    'volcanoID' => 'ruapehu',
+    'volcanoTitle' => 'Ruapehu',
+  ),
+  4 => 
+  array (
+    'acc' => 'Green',
+    'activity' => 'No volcanic unrest.',
+    'hazards' => 'Volcanic environment hazards.',
+    'level' => 0,
+    'volcanoID' => 'aucklandvolcanicfield',
+    'volcanoTitle' => 'Auckland Volcanic Field',
+  ),
+  5 => 
+  array (
+    'acc' => 'Green',
+    'activity' => 'No volcanic unrest.',
+    'hazards' => 'Volcanic environment hazards.',
+    'level' => 0,
+    'volcanoID' => 'kermadecislands',
+    'volcanoTitle' => 'Kermadec Islands',
+  ),
+  6 => 
+  array (
+    'acc' => 'Green',
+    'activity' => 'No volcanic unrest.',
+    'hazards' => 'Volcanic environment hazards.',
+    'level' => 0,
+    'volcanoID' => 'mayorisland',
+    'volcanoTitle' => 'Mayor Island',
+  ),
+  7 => 
+  array (
+    'acc' => 'Green',
+    'activity' => 'No volcanic unrest.',
+    'hazards' => 'Volcanic environment hazards.',
+    'level' => 0,
+    'volcanoID' => 'ngauruhoe',
+    'volcanoTitle' => 'Ngauruhoe',
+  ),
+  8 => 
+  array (
+    'acc' => 'Green',
+    'activity' => 'No volcanic unrest.',
+    'hazards' => 'Volcanic environment hazards.',
+    'level' => 0,
+    'volcanoID' => 'northland',
+    'volcanoTitle' => 'Northland',
+  ),
+  9 => 
+  array (
+    'acc' => 'Green',
+    'activity' => 'No volcanic unrest.',
+    'hazards' => 'Volcanic environment hazards.',
+    'level' => 0,
+    'volcanoID' => 'okataina',
+    'volcanoTitle' => 'Okataina',
+  ),
+  10 => 
+  array (
+    'acc' => 'Green',
+    'activity' => 'No volcanic unrest.',
+    'hazards' => 'Volcanic environment hazards.',
+    'level' => 0,
+    'volcanoID' => 'rotorua',
+    'volcanoTitle' => 'Rotorua',
+  ),
+  11 => 
+  array (
+    'acc' => 'Green',
+    'activity' => 'No volcanic unrest.',
+    'hazards' => 'Volcanic environment hazards.',
+    'level' => 0,
+    'volcanoID' => 'taranakiegmont',
+    'volcanoTitle' => 'Taranaki/Egmont',
+  ),
+)  
+[2021-06-17 08:05:30] local.INFO: array (
+  0 => 
+  array (
+    'acc' => 'Green',
+    'activity' => 'No volcanic unrest.',
+    'hazards' => 'Volcanic environment hazards.',
+    'level' => 0,
+    'volcanoID' => 'taupo',
+    'volcanoTitle' => 'Taupo',
+  ),
+  1 => 
+  array (
+    'acc' => 'Green',
+    'activity' => 'No volcanic unrest.',
+    'hazards' => 'Volcanic environment hazards.',
+    'level' => 0,
+    'volcanoID' => 'tongariro',
+    'volcanoTitle' => 'Tongariro',
+  ),
+  2 => 
+  array (
+    'acc' => 'Green',
+    'activity' => 'Minor volcanic unrest.',
+    'hazards' => 'Volcanic unrest hazards.',
+    'level' => 1,
+    'volcanoID' => 'whiteisland',
+    'volcanoTitle' => 'White Island',
+  ),
+  3 => 
+  array (
+    'acc' => 'Green',
+    'activity' => 'Minor volcanic unrest.',
+    'hazards' => 'Volcanic unrest hazards.',
+    'level' => 1,
+    'volcanoID' => 'ruapehu',
+    'volcanoTitle' => 'Ruapehu',
+  ),
+  4 => 
+  array (
+    'acc' => 'Green',
+    'activity' => 'No volcanic unrest.',
+    'hazards' => 'Volcanic environment hazards.',
+    'level' => 0,
+    'volcanoID' => 'aucklandvolcanicfield',
+    'volcanoTitle' => 'Auckland Volcanic Field',
+  ),
+  5 => 
+  array (
+    'acc' => 'Green',
+    'activity' => 'No volcanic unrest.',
+    'hazards' => 'Volcanic environment hazards.',
+    'level' => 0,
+    'volcanoID' => 'kermadecislands',
+    'volcanoTitle' => 'Kermadec Islands',
+  ),
+  6 => 
+  array (
+    'acc' => 'Green',
+    'activity' => 'No volcanic unrest.',
+    'hazards' => 'Volcanic environment hazards.',
+    'level' => 0,
+    'volcanoID' => 'mayorisland',
+    'volcanoTitle' => 'Mayor Island',
+  ),
+  7 => 
+  array (
+    'acc' => 'Green',
+    'activity' => 'No volcanic unrest.',
+    'hazards' => 'Volcanic environment hazards.',
+    'level' => 0,
+    'volcanoID' => 'ngauruhoe',
+    'volcanoTitle' => 'Ngauruhoe',
+  ),
+  8 => 
+  array (
+    'acc' => 'Green',
+    'activity' => 'No volcanic unrest.',
+    'hazards' => 'Volcanic environment hazards.',
+    'level' => 0,
+    'volcanoID' => 'northland',
+    'volcanoTitle' => 'Northland',
+  ),
+  9 => 
+  array (
+    'acc' => 'Green',
+    'activity' => 'No volcanic unrest.',
+    'hazards' => 'Volcanic environment hazards.',
+    'level' => 0,
+    'volcanoID' => 'okataina',
+    'volcanoTitle' => 'Okataina',
+  ),
+  10 => 
+  array (
+    'acc' => 'Green',
+    'activity' => 'No volcanic unrest.',
+    'hazards' => 'Volcanic environment hazards.',
+    'level' => 0,
+    'volcanoID' => 'rotorua',
+    'volcanoTitle' => 'Rotorua',
+  ),
+  11 => 
+  array (
+    'acc' => 'Green',
+    'activity' => 'No volcanic unrest.',
+    'hazards' => 'Volcanic environment hazards.',
+    'level' => 0,
+    'volcanoID' => 'taranakiegmont',
+    'volcanoTitle' => 'Taranaki/Egmont',
+  ),
+)  
+[2021-06-17 08:05:36] local.INFO: array (
+  0 => 
+  array (
+    'acc' => 'Green',
+    'activity' => 'No volcanic unrest.',
+    'hazards' => 'Volcanic environment hazards.',
+    'level' => 0,
+    'volcanoID' => 'taupo',
+    'volcanoTitle' => 'Taupo',
+  ),
+  1 => 
+  array (
+    'acc' => 'Green',
+    'activity' => 'No volcanic unrest.',
+    'hazards' => 'Volcanic environment hazards.',
+    'level' => 0,
+    'volcanoID' => 'tongariro',
+    'volcanoTitle' => 'Tongariro',
+  ),
+  2 => 
+  array (
+    'acc' => 'Green',
+    'activity' => 'Minor volcanic unrest.',
+    'hazards' => 'Volcanic unrest hazards.',
+    'level' => 1,
+    'volcanoID' => 'whiteisland',
+    'volcanoTitle' => 'White Island',
+  ),
+  3 => 
+  array (
+    'acc' => 'Green',
+    'activity' => 'Minor volcanic unrest.',
+    'hazards' => 'Volcanic unrest hazards.',
+    'level' => 1,
+    'volcanoID' => 'ruapehu',
+    'volcanoTitle' => 'Ruapehu',
+  ),
+  4 => 
+  array (
+    'acc' => 'Green',
+    'activity' => 'No volcanic unrest.',
+    'hazards' => 'Volcanic environment hazards.',
+    'level' => 0,
+    'volcanoID' => 'aucklandvolcanicfield',
+    'volcanoTitle' => 'Auckland Volcanic Field',
+  ),
+  5 => 
+  array (
+    'acc' => 'Green',
+    'activity' => 'No volcanic unrest.',
+    'hazards' => 'Volcanic environment hazards.',
+    'level' => 0,
+    'volcanoID' => 'kermadecislands',
+    'volcanoTitle' => 'Kermadec Islands',
+  ),
+  6 => 
+  array (
+    'acc' => 'Green',
+    'activity' => 'No volcanic unrest.',
+    'hazards' => 'Volcanic environment hazards.',
+    'level' => 0,
+    'volcanoID' => 'mayorisland',
+    'volcanoTitle' => 'Mayor Island',
+  ),
+  7 => 
+  array (
+    'acc' => 'Green',
+    'activity' => 'No volcanic unrest.',
+    'hazards' => 'Volcanic environment hazards.',
+    'level' => 0,
+    'volcanoID' => 'ngauruhoe',
+    'volcanoTitle' => 'Ngauruhoe',
+  ),
+  8 => 
+  array (
+    'acc' => 'Green',
+    'activity' => 'No volcanic unrest.',
+    'hazards' => 'Volcanic environment hazards.',
+    'level' => 0,
+    'volcanoID' => 'northland',
+    'volcanoTitle' => 'Northland',
+  ),
+  9 => 
+  array (
+    'acc' => 'Green',
+    'activity' => 'No volcanic unrest.',
+    'hazards' => 'Volcanic environment hazards.',
+    'level' => 0,
+    'volcanoID' => 'okataina',
+    'volcanoTitle' => 'Okataina',
+  ),
+  10 => 
+  array (
+    'acc' => 'Green',
+    'activity' => 'No volcanic unrest.',
+    'hazards' => 'Volcanic environment hazards.',
+    'level' => 0,
+    'volcanoID' => 'rotorua',
+    'volcanoTitle' => 'Rotorua',
+  ),
+  11 => 
+  array (
+    'acc' => 'Green',
+    'activity' => 'No volcanic unrest.',
+    'hazards' => 'Volcanic environment hazards.',
+    'level' => 0,
+    'volcanoID' => 'taranakiegmont',
+    'volcanoTitle' => 'Taranaki/Egmont',
+  ),
+)  
+[2021-06-17 08:05:58] local.INFO: array (
+  0 => 
+  array (
+    'acc' => 'Green',
+    'activity' => 'No volcanic unrest.',
+    'hazards' => 'Volcanic environment hazards.',
+    'level' => 0,
+    'volcanoID' => 'taupo',
+    'volcanoTitle' => 'Taupo',
+  ),
+  1 => 
+  array (
+    'acc' => 'Green',
+    'activity' => 'No volcanic unrest.',
+    'hazards' => 'Volcanic environment hazards.',
+    'level' => 0,
+    'volcanoID' => 'tongariro',
+    'volcanoTitle' => 'Tongariro',
+  ),
+  2 => 
+  array (
+    'acc' => 'Green',
+    'activity' => 'Minor volcanic unrest.',
+    'hazards' => 'Volcanic unrest hazards.',
+    'level' => 1,
+    'volcanoID' => 'whiteisland',
+    'volcanoTitle' => 'White Island',
+  ),
+  3 => 
+  array (
+    'acc' => 'Green',
+    'activity' => 'Minor volcanic unrest.',
+    'hazards' => 'Volcanic unrest hazards.',
+    'level' => 1,
+    'volcanoID' => 'ruapehu',
+    'volcanoTitle' => 'Ruapehu',
+  ),
+  4 => 
+  array (
+    'acc' => 'Green',
+    'activity' => 'No volcanic unrest.',
+    'hazards' => 'Volcanic environment hazards.',
+    'level' => 0,
+    'volcanoID' => 'aucklandvolcanicfield',
+    'volcanoTitle' => 'Auckland Volcanic Field',
+  ),
+  5 => 
+  array (
+    'acc' => 'Green',
+    'activity' => 'No volcanic unrest.',
+    'hazards' => 'Volcanic environment hazards.',
+    'level' => 0,
+    'volcanoID' => 'kermadecislands',
+    'volcanoTitle' => 'Kermadec Islands',
+  ),
+  6 => 
+  array (
+    'acc' => 'Green',
+    'activity' => 'No volcanic unrest.',
+    'hazards' => 'Volcanic environment hazards.',
+    'level' => 0,
+    'volcanoID' => 'mayorisland',
+    'volcanoTitle' => 'Mayor Island',
+  ),
+  7 => 
+  array (
+    'acc' => 'Green',
+    'activity' => 'No volcanic unrest.',
+    'hazards' => 'Volcanic environment hazards.',
+    'level' => 0,
+    'volcanoID' => 'ngauruhoe',
+    'volcanoTitle' => 'Ngauruhoe',
+  ),
+  8 => 
+  array (
+    'acc' => 'Green',
+    'activity' => 'No volcanic unrest.',
+    'hazards' => 'Volcanic environment hazards.',
+    'level' => 0,
+    'volcanoID' => 'northland',
+    'volcanoTitle' => 'Northland',
+  ),
+  9 => 
+  array (
+    'acc' => 'Green',
+    'activity' => 'No volcanic unrest.',
+    'hazards' => 'Volcanic environment hazards.',
+    'level' => 0,
+    'volcanoID' => 'okataina',
+    'volcanoTitle' => 'Okataina',
+  ),
+  10 => 
+  array (
+    'acc' => 'Green',
+    'activity' => 'No volcanic unrest.',
+    'hazards' => 'Volcanic environment hazards.',
+    'level' => 0,
+    'volcanoID' => 'rotorua',
+    'volcanoTitle' => 'Rotorua',
+  ),
+  11 => 
+  array (
+    'acc' => 'Green',
+    'activity' => 'No volcanic unrest.',
+    'hazards' => 'Volcanic environment hazards.',
+    'level' => 0,
+    'volcanoID' => 'taranakiegmont',
+    'volcanoTitle' => 'Taranaki/Egmont',
+  ),
+)  
+[2021-06-17 08:06:25] local.INFO: array (
+  0 => 
+  array (
+    'acc' => 'Green',
+    'activity' => 'No volcanic unrest.',
+    'hazards' => 'Volcanic environment hazards.',
+    'level' => 0,
+    'volcanoID' => 'taupo',
+    'volcanoTitle' => 'Taupo',
+  ),
+  1 => 
+  array (
+    'acc' => 'Green',
+    'activity' => 'No volcanic unrest.',
+    'hazards' => 'Volcanic environment hazards.',
+    'level' => 0,
+    'volcanoID' => 'tongariro',
+    'volcanoTitle' => 'Tongariro',
+  ),
+  2 => 
+  array (
+    'acc' => 'Green',
+    'activity' => 'Minor volcanic unrest.',
+    'hazards' => 'Volcanic unrest hazards.',
+    'level' => 1,
+    'volcanoID' => 'whiteisland',
+    'volcanoTitle' => 'White Island',
+  ),
+  3 => 
+  array (
+    'acc' => 'Green',
+    'activity' => 'Minor volcanic unrest.',
+    'hazards' => 'Volcanic unrest hazards.',
+    'level' => 1,
+    'volcanoID' => 'ruapehu',
+    'volcanoTitle' => 'Ruapehu',
+  ),
+  4 => 
+  array (
+    'acc' => 'Green',
+    'activity' => 'No volcanic unrest.',
+    'hazards' => 'Volcanic environment hazards.',
+    'level' => 0,
+    'volcanoID' => 'aucklandvolcanicfield',
+    'volcanoTitle' => 'Auckland Volcanic Field',
+  ),
+  5 => 
+  array (
+    'acc' => 'Green',
+    'activity' => 'No volcanic unrest.',
+    'hazards' => 'Volcanic environment hazards.',
+    'level' => 0,
+    'volcanoID' => 'kermadecislands',
+    'volcanoTitle' => 'Kermadec Islands',
+  ),
+  6 => 
+  array (
+    'acc' => 'Green',
+    'activity' => 'No volcanic unrest.',
+    'hazards' => 'Volcanic environment hazards.',
+    'level' => 0,
+    'volcanoID' => 'mayorisland',
+    'volcanoTitle' => 'Mayor Island',
+  ),
+  7 => 
+  array (
+    'acc' => 'Green',
+    'activity' => 'No volcanic unrest.',
+    'hazards' => 'Volcanic environment hazards.',
+    'level' => 0,
+    'volcanoID' => 'ngauruhoe',
+    'volcanoTitle' => 'Ngauruhoe',
+  ),
+  8 => 
+  array (
+    'acc' => 'Green',
+    'activity' => 'No volcanic unrest.',
+    'hazards' => 'Volcanic environment hazards.',
+    'level' => 0,
+    'volcanoID' => 'northland',
+    'volcanoTitle' => 'Northland',
+  ),
+  9 => 
+  array (
+    'acc' => 'Green',
+    'activity' => 'No volcanic unrest.',
+    'hazards' => 'Volcanic environment hazards.',
+    'level' => 0,
+    'volcanoID' => 'okataina',
+    'volcanoTitle' => 'Okataina',
+  ),
+  10 => 
+  array (
+    'acc' => 'Green',
+    'activity' => 'No volcanic unrest.',
+    'hazards' => 'Volcanic environment hazards.',
+    'level' => 0,
+    'volcanoID' => 'rotorua',
+    'volcanoTitle' => 'Rotorua',
+  ),
+  11 => 
+  array (
+    'acc' => 'Green',
+    'activity' => 'No volcanic unrest.',
+    'hazards' => 'Volcanic environment hazards.',
+    'level' => 0,
+    'volcanoID' => 'taranakiegmont',
+    'volcanoTitle' => 'Taranaki/Egmont',
+  ),
+)  
