@@ -31,7 +31,7 @@
 @foreach($properties as $propertie)
 
     <div class="col s2">
-      <div class="card">
+      <div class="card card small">
         <div class="card-image">
           <img class="responsive-img" src="images\{{$propertie['volcanoID']}}.jpg">
           <span class="card-title">{{$propertie['volcanoTitle']}}</span>
