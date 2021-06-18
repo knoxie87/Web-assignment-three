@@ -20,3 +20,7 @@ Route::get('/', function () {
 
 Route::resource('valconoes', ValconoeController::class);
 
+Route::post("user",[UserAuth::class,'userLogin']);
+
+
+Route::view("login",'login');
