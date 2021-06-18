@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ValconoeController;
+use App\Http\Controllers\UserAuth;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -20,7 +22,7 @@ Route::get('/', function () {
 
 Route::resource('valconoes', ValconoeController::class);
 
-Route::post("user",[UserAuth::class,'userLogin']);
+Route::post('user',[UserAuth::class,'userLogin']);
 
 
 Route::view("login",'login');

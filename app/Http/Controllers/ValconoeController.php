@@ -28,7 +28,7 @@ class ValconoeController extends Controller
     ]);
 
 
-    log::info($properties);
+    //log::info($properties);
 
     return view('index', ['properties' => $properties]);
     }
