@@ -7,12 +7,13 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>User register</h1>
-    <form action="user" method="POST">
+    <h1>User login</h1>
+    <form action="register" method="POST">
     @csrf
-    <input type="text" name="user" placeholder="enter user name"><br><br>
+    <input type="text" name="email" placeholder="enter email"><br><br>
     <input type="password" name="password" placeholder="enter user password"><br><br>
-    <button type="submit">login</button>
+    <input type="text" name="name" placeholder="enter user name"><br><br>
+    <button type="submit">register</button>
     </form>
 </body>
 </html>

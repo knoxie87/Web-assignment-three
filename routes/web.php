@@ -24,5 +24,9 @@ Route::resource('valconoes', ValconoeController::class);
 
 Route::post('user',[UserAuth::class,'userLogin']);
 
+Route::post('register',[UserAuth::class,'userregister']);
+
 
 Route::view("login",'login');
+
+Route::view("register",'register');
