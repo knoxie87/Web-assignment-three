@@ -5,6 +5,8 @@ use App\Http\controllers\UserAuth;
 use Illuminate\Http\Request;
 use App\Models\user;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Log;
+
 
 
 
@@ -12,16 +14,12 @@ class UserAuth extends Controller
 {
     function userLogin(Request $request){
         $data= $request->all();
-        $userData = user::wherein('email',$data['email']);
-     echo ($userData->id);
-     //   echo($userData->id);
-     //   echo(Auth::loginUsingId($userData->id));
-      
-       
+        $user = user::where('email', $data['email'])->first();
+        
 
-    //    $data= $req->input();
-    //    $req->session()->put('user',$data['user']);
-    //    echo session ('user');
+        $request->session()->put('user', $user['name']);
+        
+        return redirect('profile');
     }
     
 
@@ -33,7 +31,7 @@ class UserAuth extends Controller
             'password' => $data['password']
 
         ]);
-        Auth::login($user);
+
         }
     
 }

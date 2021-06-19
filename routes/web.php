@@ -29,4 +29,20 @@ Route::post('register',[UserAuth::class,'userregister']);
 
 Route::view("login",'login');
 
-Route::view("register",'register');
+
+
+Route::get('/profile',function() {
+    if(session()->has('user'))
+    {
+        return redirect('/profile');
+    }
+    return redirect('login');
+});
+
+Route::get('/logout',function() {
+    if(session()->has('user'))
+    {
+        session()->pull('user');
+    }
+    return redirect('/valconoes');
+});

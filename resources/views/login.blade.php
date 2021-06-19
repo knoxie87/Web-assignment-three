@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>User register</h1>
+    <h1>User login</h1>
     <form action="user" method="POST">
     @csrf
     <input type="text" name="email" placeholder="enter user email"><br><br>
