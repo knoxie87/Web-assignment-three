@@ -23,11 +23,16 @@ Route::get('/', function () {
 });
 
 Route::resource('valconoes', ValconoeController::class);
-Route::resource('users', UserController::class);
+
+
+Route::resource('users', UserController::class)->middleware('checkuser');
+
+
 Route::Post('loginuser', [UserAuth::class, 'userLogin']);
 Route::Post('register', [UserAuth::class, 'userRegister']);
 
 Route::view("register",'register');
+Route::view("child",'child');
 
 Route::get('login',function() {
     if(session()->has('user')){
@@ -42,8 +47,8 @@ Route::get('/logout',function() {
     if(session()->has('user'))
     {
         session()->pull('user');
-        return redirect('/login');
+        return redirect('/valconoes');
     }else{
-        return redirect('/login');
+        return redirect('/valconoes');
     }
 });
