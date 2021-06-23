@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\user;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Log;
 
 class UserController extends Controller
 {
@@ -14,7 +15,10 @@ class UserController extends Controller
      */
     public function index()
     {
-        //
+
+        $userdetails = user::all();
+        
+        return view('users', ['userdetails' => $userdetails]);
     }
 
     /**
@@ -24,7 +28,13 @@ class UserController extends Controller
      */
     public function create()
     {
-        //
+        $data= $req->all();
+        $user = User::create([
+            'name' => $data['name'],
+            'email' => $data['email'],
+            'password' => $data['password']
+
+        ]);
     }
 
     /**
@@ -44,7 +54,7 @@ class UserController extends Controller
      * @param  \App\Models\user  $user
      * @return \Illuminate\Http\Response
      */
-    public function show(user $user)
+    public function show($user)
     {
         //
     }
@@ -55,9 +65,12 @@ class UserController extends Controller
      * @param  \App\Models\user  $user
      * @return \Illuminate\Http\Response
      */
-    public function edit(user $user)
+    public function edit($id)
     {
-        //
+    $user = User::findorfail($id);
+
+    return view('user', ['user' => $user]);
+
     }
 
     /**

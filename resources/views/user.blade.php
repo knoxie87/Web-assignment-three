@@ -1,6 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{asset('css/materialize.css')}}">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="{{asset('js/materialize.min.js')}}"></script>
+
+    <title>Document</title>
+</head>
+<body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -57,20 +71,21 @@ main {
 </header>
 
 <main>
+<h1>Edit User {{$user->name}}</h1>
+
 <form action="/register" method="POST">
-    @csrf
     <div class="row">
 
     <div class="input-field col s6">
-    <input type="text" name="email" placeholder="enter user email"><br><br>
+    <input type="text" name="email" placeholder="{{$user->email}}"><br><br>
     </div>
 
     <div class="input-field col s6">
-    <input type="password" name="password" placeholder="enter user password"><br><br>
+    <input type="password" name="password" placeholder="{{$user->password}}"><br><br>
     </div>
 
     <div class="input-field col s6">
-    <input type="text" name="name" placeholder="enter username"><br><br>
+    <input type="text" name="name" placeholder="{{$user->name}}"><br><br>
     </div>
 
     <button class="btn waves-effect #1976d2 blue darken-2" type="submit" name="action">Submit
@@ -86,5 +101,7 @@ main {
     </div>
   </footer>
 
+</body>
+</html>
 </body>
 </html>

@@ -2,7 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ValconoeController;
+use App\Http\Controllers\UserController;
 use App\Http\Controllers\UserAuth;
+
 
 
 /*
@@ -21,28 +23,27 @@ Route::get('/', function () {
 });
 
 Route::resource('valconoes', ValconoeController::class);
+Route::resource('users', UserController::class);
+Route::Post('loginuser', [UserAuth::class, 'userLogin']);
+Route::Post('register', [UserAuth::class, 'userRegister']);
 
-Route::post('user',[UserAuth::class,'userLogin']);
+Route::view("register",'register');
 
-Route::post('register',[UserAuth::class,'userregister']);
-
-
-Route::view("login",'login');
-
-
-
-Route::get('/profile',function() {
-    if(session()->has('user'))
-    {
-        return redirect('/profile');
+Route::get('login',function() {
+    if(session()->has('user')){
+        return redirect('/users');
+    }else{
+        return view('/login');
     }
-    return redirect('login');
+ 
 });
 
 Route::get('/logout',function() {
     if(session()->has('user'))
     {
         session()->pull('user');
+        return redirect('/login');
+    }else{
+        return redirect('/login');
     }
-    return redirect('/valconoes');
 });
