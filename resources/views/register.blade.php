@@ -20,7 +20,7 @@
     </div>
 
     <button class="btn waves-effect #1976d2 blue darken-2" type="submit" name="action">Submit
-    <i class="material-icons right">send</i>
+    <i class="material-icons right">Send</i>
   </button>
 
   @endsection
