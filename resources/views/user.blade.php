@@ -4,7 +4,7 @@
 
 <h1>Edit User {{$user->name}}</h1>
 
-<form action="/register" method="POST">
+<form action="/" method="POST">
     <div class="row">
 
     <div class="input-field col s6">
@@ -25,3 +25,6 @@
 </form>
 
 @endsection
+
+
+git remote add origin https://github.com/knoxie87/Web-assignment-three.git

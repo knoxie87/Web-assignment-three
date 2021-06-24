@@ -41,7 +41,7 @@ main {
 <nav>
   <div class="nav-wrapper #b3e5fc #1976d2 blue darken-2">
   <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-    <a href="valconoes" class="brand-logo">Valcanoes</a>
+    <a href="/" class="brand-logo">Valcanoes</a>
     <ul class="right hide-on-med-and-down">
 
     @if (session()->has('user'))
