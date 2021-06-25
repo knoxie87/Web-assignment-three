@@ -28,13 +28,7 @@ class UserController extends Controller
      */
     public function create()
     {
-        $data= $req->all();
-        $user = User::create([
-            'name' => $data['name'],
-            'email' => $data['email'],
-            'password' => $data['password']
-
-        ]);
+    return view('add');
     }
 
     /**
@@ -45,7 +39,14 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $data= $request->all();
+        $user = User::create([
+            'name' => $data['name'],
+            'email' => $data['email'],
+            'password' => $data['password']
+
+        ]);
+        return redirect('users');
     }
 
     /**
@@ -56,7 +57,8 @@ class UserController extends Controller
      */
     public function show($user)
     {
-        //
+        return view('add');
+
     }
 
     /**

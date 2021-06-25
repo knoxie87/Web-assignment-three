@@ -8,6 +8,9 @@ h2{
 
 @section('body')
     <h2>Edit Users </h2>
+    <div class="right-align">
+    <a href="users/create" class="btn-floating btn-large waves-effect waves-light blue"><i class="material-icons">add</i></a>
+    </div>
     <table>
         <thead>
           <tr>

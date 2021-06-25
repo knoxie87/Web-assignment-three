@@ -31,6 +31,9 @@ main {
     height: 100px;
     width: 100px;
 }
+.card-image{
+  height: 250px;
+}
 </style>
 
 <body>

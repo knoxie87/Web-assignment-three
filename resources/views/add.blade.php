@@ -3,7 +3,7 @@
 @section('body')
 
 
-<form action="/register" method="POST">
+<form action="/users" method="POST">
     @csrf
     <div class="row">
 
