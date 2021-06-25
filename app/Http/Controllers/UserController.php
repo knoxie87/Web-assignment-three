@@ -45,6 +45,7 @@ class UserController extends Controller
             'email' => $data['email'],
             'password' => $data['password']
 
+            
         ]);
         return redirect('users');
     }
