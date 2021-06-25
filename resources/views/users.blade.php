@@ -1,8 +1,13 @@
 @extends('layouts.app')
 
+<style>
+h2{
+  font-family: 'Roboto', sans-serif;
+} 
+</style>
+
 @section('body')
-    <h2>hello {{session('user')}} </h2>
-    <a href="/logout">logout</a>
+    <h2>Edit Users </h2>
     <table>
         <thead>
           <tr>

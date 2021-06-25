@@ -14,7 +14,12 @@ class UserAuth extends Controller
 {
     function userLogin(Request $request){
         $data= $request->all();
-        $user = user::where('email', $data['email'])->first();
+        $user = user::where('email', $data['email'])
+        ->where('password',$data['password'])
+        ->first();
+        Log::info($user);
+
+
         $request->session()->put('user', $user['name']);
         
         return redirect('users');

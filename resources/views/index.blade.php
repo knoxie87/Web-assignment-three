@@ -2,10 +2,10 @@
 
 @section('body')
 
-  <div class="row">
+<div class="row">
 @foreach($properties as $propertie)
 
-    <div class="col s12 m4 l2">
+    <div class="col s12 m6 l4">
       <div class="card card medium">
         <div class="card-image card medium">
           <img class="responsiv-img" src="images\{{$propertie['volcanoID']}}.jpg">
@@ -19,5 +19,5 @@
       </div>
     </div>
 @endforeach
-</div>
+
 @endsection

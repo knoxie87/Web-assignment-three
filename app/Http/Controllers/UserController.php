@@ -80,9 +80,18 @@ class UserController extends Controller
      * @param  \App\Models\user  $user
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, user $user)
+    public function update(Request $request, $user)
     {
-        //
+        $data = $request->all();
+        
+        User::where('id', $user)
+        ->update([
+           'name' => $data['name'],
+           'password' =>$data['password'],
+           'email' => $data['email']
+        ]);
+
+    return redirect('users');
     }
 
     /**

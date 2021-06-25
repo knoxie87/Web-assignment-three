@@ -41,31 +41,44 @@ main {
 <nav>
   <div class="nav-wrapper #b3e5fc #1976d2 blue darken-2">
   <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-    <a href="/" class="brand-logo">Valcanoes</a>
-    <ul class="right hide-on-med-and-down">
+
+  <div class="container">
+  <a href="/" class="brand-logo"><i class="material-icons">landscape</i>GeoVal</a>
+  <ul class="right hide-on-med-and-down">
 
     @if (session()->has('user'))
-    <li><a href="/logout">logout</a></li>
+    <li><a href="/users">Users</a></li>
+    <li><a href="/logout">Logout</a></li>
+
     @else
       <li><a href="register">Register</a></li>
       <li><a href="login">Login</a></li>
     @endif
+
     </ul>
+  </div>
   </div>
 </nav>
 
 <ul class="sidenav" id="mobile-demo">
-  <li><a href="register">Register</a></li>
-  <li><a href="login">Login</a></li>
+@if (session()->has('user'))
+    <li><a href="/users">Users</a></li>
+    <li><a href="/logout">Logout</a></li>
+
+    @else
+      <li><a href="register">Register</a></li>
+      <li><a href="login">Login</a></li>
+    @endif
 </ul>
 
 </header>
-
-    <main>
+<main>
+<div class="container">
     @section('body')
 
     @show
-    </main>
+</div>
+</main>
 
 <footer class="page-footer #b3e5fc #1976d2 blue darken-2">
     <div class="footer-copyright">
