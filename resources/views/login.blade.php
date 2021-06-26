@@ -9,10 +9,13 @@
 
     <div class="input-field col s12 m6 l6">
     <input type="text" name="email" placeholder="enter user email"><br><br>
+    {!! $errors->first('email', '<p class="help-block">:message</p>') !!}
     </div>
 
     <div class="input-field col s12 m6 l6">
     <input type="password" name="password" placeholder="enter user password"><br><br>
+    {!! $errors->first('password', '<p class="help-block">:message</p>') !!}
+
     </div>
 
     <div class="input-field col s12 m6 l6">

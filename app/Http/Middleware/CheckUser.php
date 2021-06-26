@@ -16,11 +16,17 @@ class CheckUser
      */
     public function handle(Request $request, Closure $next)
     {
-        if (!$request->session()->exists('user')) {
-            // user value cannot be found in session
-            return redirect('login');
-        }
+        if ($request->session()->exists('user')) {
 
-        return $next($request);
+            return redirect('/');
+        }
+        else if (!$request->session()->exists('user')) {
+
+            return redirect('/');
+        }
+            return $next($request);
+
+
+
     }
 }

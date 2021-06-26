@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ValconoeController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\UserAuth;
+use Illuminate\Support\Facades\Log;
 
 
 
@@ -38,15 +39,17 @@ Route::get('login',function() {
     if(session()->has('user')){
         return redirect('/users');
     }else{
+        Log::info(session()->has('user'));
         return view('/login');
     }
  
 });
 
 Route::get('/logout',function() {
-    if(session()->has('user'))
+    if(session()->has('user') || ('admin'))
     {
-        session()->pull('user');
+       session()->flush();
+
         return redirect('/valconoes');
     }else{
         return redirect('/valconoes');
