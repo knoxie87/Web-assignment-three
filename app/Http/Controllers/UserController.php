@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Models\user;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
+use Hash;
+
 
 class UserController extends Controller
 {
@@ -53,7 +55,7 @@ class UserController extends Controller
             'name' => $data['name'],
             'email' => $data['email'],
             'role' => $data['role'],
-            'password' => $data['password']        
+            'password' => Hash::make($data['password'])
         ]);
         return redirect('users');
     }
@@ -105,7 +107,7 @@ class UserController extends Controller
         User::where('id', $user)
         ->update([
            'name' => $data['name'],
-           'password' =>$data['password'],
+           'password' => Hash::make($data['password']),
            'email' => $data['email'],
            'role' => $data['role']
         ]);
