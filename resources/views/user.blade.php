@@ -29,9 +29,26 @@ h2{
     <input type="text" name="name" placeholder="{{$user->name}}"><br><br>
     </div>
 
-    <button class="btn waves-effect #1976d2 blue darken-2" type="submit" name="action">Submit
+    <div class="input-field col s12 m6 l6">
+    <select name="role">
+      <option value="user" disabled selected>Choose role</option>
+      <option value="admin">admin</option>
+      <option value="user">user</option>
+    </select>
+  </div>
+
+    <div class="input-field col s12 m6 l6">
+    <button class="btn waves-effect #1976d2 blue darken-2" type="submit">Submit
     <i class="material-icons right">send</i>
-  </button>
+     </button>
+    </div>
+    
+<script>
+    $(document).ready(function(){
+    $('select').formSelect();
+  });
+</script>
+
 </form>
 
 @endsection

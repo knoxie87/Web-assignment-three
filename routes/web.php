@@ -39,7 +39,6 @@ Route::get('login',function() {
     if(session()->has('user')){
         return redirect('/users');
     }else{
-        Log::info(session()->has('user'));
         return view('/login');
     }
  
@@ -48,6 +47,7 @@ Route::get('login',function() {
 Route::get('/logout',function() {
     if(session()->has('user') || ('admin'))
     {
+        Log::info(session()->all());
        session()->flush();
 
         return redirect('/valconoes');

@@ -11,11 +11,12 @@ h2{
     <div class="right-align">
     <a href="users/create" class="btn-floating btn-large waves-effect waves-light blue"><i class="material-icons">add</i></a>
     </div>
-    <table>
+    <table class='responsive-table'>
         <thead>
           <tr>
               <th>Name</th>
               <th>Email</th>
+              <th>Role</th>
               <th>Delete</th> 
               <th>Edit</th> 
           </tr>
@@ -25,6 +26,7 @@ h2{
           <tr>
             <td>{{$user->name}}</td>
             <td>{{$user->email}}</td>
+            <td>{{$user->role}}</td>
             <td>Delete</td>
             <td><a href="users/{{$user->id}}/edit">Edit</a></td>
           </tr>

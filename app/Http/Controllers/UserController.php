@@ -39,13 +39,21 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
+
+        $request->validate([
+            'name' => 'required|min:1',
+            'email' => 'required|min:1|unique:users',
+            'role' => 'required',
+            'password' => 'required|min:1|string',
+        ]);
+
         $data= $request->all();
+        Log::info($data);
         $user = User::create([
             'name' => $data['name'],
             'email' => $data['email'],
-            'password' => $data['password']
-
-            
+            'role' => $data['role'],
+            'password' => $data['password']        
         ]);
         return redirect('users');
     }
@@ -87,11 +95,19 @@ class UserController extends Controller
     {
         $data = $request->all();
         
+        $request->validate([
+            'name' => 'required|min:1',
+            'email' => 'required|min:1',
+            'role' => 'required',
+            'password' => 'required|min:1|string',
+        ]);
+
         User::where('id', $user)
         ->update([
            'name' => $data['name'],
            'password' =>$data['password'],
-           'email' => $data['email']
+           'email' => $data['email'],
+           'role' => $data['role']
         ]);
 
     return redirect('users');

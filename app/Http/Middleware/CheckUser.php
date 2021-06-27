@@ -20,11 +20,13 @@ class CheckUser
 
             return redirect('/');
         }
-        else if (!$request->session()->exists('user')) {
+        else if ($request->session()->exists('admin')) {
 
-            return redirect('/');
-        }
             return $next($request);
+        }else{
+        return redirect('/');
+
+        }
 
 
 

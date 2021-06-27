@@ -49,7 +49,7 @@ main {
   <a href="/" class="brand-logo"><i class="material-icons">landscape</i>GeoVal</a>
   <ul class="right hide-on-med-and-down">
 
-    @if (session()->has('user'))
+    @if (session()->has('user' ) || session()->has('admin'))
     <li><a href="/users">Users</a></li>
     <li><a href="/logout">Logout</a></li>
 
