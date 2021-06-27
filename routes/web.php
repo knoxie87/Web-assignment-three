@@ -40,6 +40,8 @@ Route::get('login',function() {
         return redirect('/users');
     }else{
         return view('/login');
+        Log::info(session()->all());
+
     }
  
 });
@@ -47,7 +49,7 @@ Route::get('login',function() {
 Route::get('/logout',function() {
     if(session()->has('user') || ('admin'))
     {
-        Log::info(session()->all());
+        Auth::logout();
        session()->flush();
 
         return redirect('/valconoes');

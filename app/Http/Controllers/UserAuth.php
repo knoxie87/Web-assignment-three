@@ -19,25 +19,24 @@ class UserAuth extends Controller
             'password' => 'required|string',
         ]);
 
-        $data= $request->all();
-        $user = user::where('email', $data['email'])
-        ->where('password',$data['password'])
-        ->first();
-        if ($user === null) {
-        return back()->withErrors('Wrong username or password');
+        $credentials = $request->only('email', 'password');
+
+        if (Auth::attempt($credentials)) {
+
+            $data= $request->all();
+            $user = user::where('email', $data['email'])->first();
+    
+                if(($user->role)=='admin')
+                {
+                    $request->session()->put('admin', $user['name']);
+        
+                }else{
+                    $request->session()->put('user', $user['name']);
+                }   
+        }else{
+            return back()->withErrors('Wrong username or password');
 
         }
-        
-            if(($user->role)=='admin')
-            {
-                $request->session()->put('admin', $user['name']);
-    
-            }else{
-                $request->session()->put('user', $user['name']);
-            }
-          
-          
-
 
         return redirect('users');
     }
@@ -45,7 +44,6 @@ class UserAuth extends Controller
 
     function userregister(Request $req){
         
-
         $req->validate([
             'name' => 'required|min:1',
             'email' => 'required|min:1|unique:users',
@@ -56,7 +54,7 @@ class UserAuth extends Controller
         $user = user::create([
             'name' => $data['name'],
             'email' => $data['email'],
-            'password' => $data['password']
+            'password' => Hash::make($data['password'])
         ]);
         return redirect('users');
 
