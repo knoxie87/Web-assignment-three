@@ -15,7 +15,6 @@
     <div class="input-field col s12 m6 l6">
     <input type="password" name="password" placeholder="enter user password"><br><br>
     {!! $errors->first('password', '<p class="help-block">:message</p>') !!}
-
     </div>
 
     <div class="input-field col s12 m6 l6">
@@ -24,6 +23,9 @@
   </button>
   </div>
 
+  @if($errors->any())
+  <h6>{{$errors->first()}}</h6>
+  @endif
     </div>
 </form>
 

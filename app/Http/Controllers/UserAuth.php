@@ -13,7 +13,7 @@ use Hash;
 class UserAuth extends Controller
 {
     function userLogin(Request $request){
-
+        
         $request->validate([
             'email' => 'required',
             'password' => 'required|string',
@@ -23,16 +23,22 @@ class UserAuth extends Controller
         $user = user::where('email', $data['email'])
         ->where('password',$data['password'])
         ->first();
-        Log::info($user->name);
+        if ($user === null) {
+        return back()->withErrors('Wrong username or password');
 
-        if(($user->role)=='admin')
-        {
-            $request->session()->put('admin', $user['name']);
-
-        }else{
-            $request->session()->put('user', $user['name']);
         }
         
+            if(($user->role)=='admin')
+            {
+                $request->session()->put('admin', $user['name']);
+    
+            }else{
+                $request->session()->put('user', $user['name']);
+            }
+          
+          
+
+
         return redirect('users');
     }
     

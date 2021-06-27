@@ -5,6 +5,13 @@ h2{
   font-family: 'Roboto', sans-serif;
   
 } 
+.dA{
+  display: inline-block;
+}
+.ba{
+  padding-top:35px;
+  float: right;
+}
 .delete{
   font-size: 100%;
   font-family: inherit;
@@ -22,10 +29,16 @@ h2{
 </style>
 
 @section('body')
-    <h2>Edit Users </h2>
-    <div class="right-align">
-    <a href="users/create" class="btn-floating btn-large waves-effect waves-light blue"><i class="material-icons">add</i></a>
+
+    <div  class="dA">
+    <h2 class="">Edit Users </h2>
     </div>
+    <div class="dA ba">
+    <div class="right-align">
+    <a href="users/create" class="btn-floating btn-large waves-effect waves-light blue  right-align"><i class="material-icons">add</i></a>
+    </div>
+    </div>
+
     <table class='responsive-table'>
         <thead>
           <tr>
